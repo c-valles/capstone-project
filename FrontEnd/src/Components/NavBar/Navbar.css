@@ -1,0 +1,53 @@
+
+#acleaf {
+    width: 60px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+}
+
+.title p {
+    color: aliceblue;
+    font-size: 38px;
+    font-weight: 600px;
+}
+
+.navmenu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navmenu li {
+    cursor: pointer;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.account button {
+    width: 157px;
+    height: 58px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.account button:active{
+    background: green;
+}
