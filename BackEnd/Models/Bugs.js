@@ -17,4 +17,4 @@ const BugSchema = new mongoose.Schema({
     wished: Boolean
 })
 
-module.exports = mongoose.model('Bug', BugSchema);
+export default new mongoose.model("Bug",BugSchema);

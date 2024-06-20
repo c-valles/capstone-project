@@ -1,0 +1,51 @@
+.fish-info {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20 px;
+    font-family: Arial, Sans-serif;
+    color: #333;
+}
+
+.fish-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.fish-card {
+    background-color: #53ab44;
+    border: 1px solid #1c945c;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.fish-card:hover {
+    transform: translateY(-5px);
+}
+
+.fish-card h2 {
+    font-size: 1.5rem;
+    margin-bottom:10px;
+}
+
+.fish-card img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.fish-card p {
+    margin-bottom: 8px;
+}
+
+.fish-card p:first-child {
+    font-weight: bold;
+}
+
+div {
+    background-color: #1a925e;
+}

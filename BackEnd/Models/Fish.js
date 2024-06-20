@@ -8,7 +8,6 @@ const FishSchema = new mongoose.Schema({
     location: String,
     shadow_size: String,
     rarity: String,
-    total_catch: Number,
     sell_nook: Number,
     availability: {
         months: [String],
@@ -18,4 +17,4 @@ const FishSchema = new mongoose.Schema({
     wished: Boolean,
 });
 
-module.exports = mongoose.model('Fish', FishSchema);
+export default new mongoose.model("Fish",FishSchema);

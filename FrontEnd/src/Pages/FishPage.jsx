@@ -1,11 +1,12 @@
 import React from "react";
+import FishPage from "../Components/FishPage/FishPage";
 
-const FishPage = () => {
+const fishPage = () => {
     return (
         <div>
-            <h1>Fish</h1>
+            <FishPage/>
         </div>
     )
 }
 
-export default FishPage;
+export default fishPage;

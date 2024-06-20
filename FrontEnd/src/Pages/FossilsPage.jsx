@@ -1,11 +1,12 @@
 import React from "react";
+import FossilPage from "../Components/FossilPage/FossilPage"
 
-const FossilPage = () => {
+const fossilPage = () => {
     return (
         <div>
-            <h1>Fossils</h1>
+            <FossilPage/>
         </div>
     )
 }
 
-export default FossilPage;
+export default fossilPage;

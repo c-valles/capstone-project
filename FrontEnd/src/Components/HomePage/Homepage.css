@@ -4,3 +4,16 @@
     display: flex;
     align-self: center;
 }
+
+.intro {
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+div {
+    background-color:
+    #1a925e;
+}
+

@@ -1,9 +1,10 @@
 import React from "react";
+import ArtPage from "../Components/ArtPage/ArtPage";
 
 const ArtworkPage = () => {
     return (
         <div>
-            <h1>Artwork</h1>
+            <ArtPage/>
         </div>
     )
 }

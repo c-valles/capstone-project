@@ -1,13 +1,16 @@
-import React from "react";
+import React from 'react';
 import './Navbar.css';
-import { Link } from "react-router-dom";
-import acleaf from '../../Assets/acleaf.png'
+import { Link } from 'react-router-dom';
+import actt from '../../Assets/actt.png'
 
 const Navbar = () => {
     return (
+        <div>
         <div className="title">
-            <img src={acleaf} alt="Animal Crossing Leaf" id="acleaf"/>
+            <img src={actt} alt="Timmy & Tommy Nook" id="actt"/>
             <p>Nookpedia</p>
+        </div>
+        
         <div className="navbar">
             <ul className="navmenu">
                 <li><Link to='/'>Home</Link></li>

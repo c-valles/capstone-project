@@ -14,4 +14,4 @@ const ArtSchema = new mongoose.Schema({
     wished: Boolean,
 })
 
-module.exports = mongoose.model('Art', ArtSchema);
+export default new mongoose.model("Art",ArtSchema);

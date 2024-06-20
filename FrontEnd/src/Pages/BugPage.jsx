@@ -1,11 +1,12 @@
 import React from "react";
+import BugPage from "../Components/BugPage/BugPage";
 
-const BugPage = () => {
+const bugPage = () => {
     return (
         <div>
-            <h1>Bug</h1>
+            <BugPage/>
         </div>
     )
 }
 
-export default BugPage;
+export default bugPage;

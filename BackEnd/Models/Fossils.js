@@ -9,4 +9,4 @@ const FossilSchema = new mongoose.Schema({
     wished: Boolean,
 })
 
-module.exports = mongoose.model('Fossil', FossilSchema);
+export default new mongoose.model("Fossil",FossilSchema);

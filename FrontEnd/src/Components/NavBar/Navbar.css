@@ -11,7 +11,8 @@
     box-shadow: 0 1px 3px -2px black;
 }
 
-.title p {
+.title {
+    background-image: url(../../Assets/acgrass.png);
     color: aliceblue;
     font-size: 38px;
     font-weight: 600px;
