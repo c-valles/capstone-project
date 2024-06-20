@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from 'axios';
+import axios from "axios";
 import "../BugPage/bugpage.css"
 
 const BugPage = () => {
@@ -10,12 +10,12 @@ const BugPage = () => {
             try {
                 const response = await axios.get("https://api.nookipedia.com/nh/bugs", {
                     headers: {
-                        'X-API-KEY': import.meta.env.VITE_NOOK_API_KEY
+                        "X-API-KEY": import.meta.env.VITE_NOOK_API_KEY
                     }
                 });
                 setData(response.data);
             } catch (error) {
-                console.error('Error fetching bugs!', error);
+                console.error("Error fetching bugs!", error);
             }
         };
         fetchData();
@@ -24,7 +24,7 @@ const BugPage = () => {
     return (
         <div className="bug-info">
             <h1>Bug Information:</h1>
-            <div className='bug-list'>
+            <div className="bug-list">
                 {data.map(bug => (
                     <div className="bug-card" key={bug.id}>
                         <h2>{bug.name}</h2>

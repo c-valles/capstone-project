@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from 'axios';
+import axios from "axios";
 import "../FossilPage/fossilpage.css"
 
 const FossilPage = () => {
@@ -10,12 +10,12 @@ const FossilPage = () => {
             try {
                 const response = await axios.get("https://api.nookipedia.com/nh/fossils/individuals", {
                     headers: {
-                        'X-API-KEY': import.meta.env.VITE_NOOK_API_KEY
+                        "X-API-KEY": import.meta.env.VITE_NOOK_API_KEY
                     }
                 });
                 setData(response.data);
             } catch (error) {
-                console.error('Error fetching fossils!', error);
+                console.error("Error fetching fossils!", error);
             }
         };
         fetchData();
@@ -24,7 +24,7 @@ const FossilPage = () => {
     return (
         <div className="fossil-info">
             <h1>Fossil Information:</h1>
-            <div className='fossil-list'>
+            <div className="fossil-list">
                 {data.map(fossil => (
                     <div className="fossil-card" key={fossil.id}>
                         <h2>{fossil.name}</h2>

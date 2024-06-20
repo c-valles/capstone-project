@@ -1,6 +1,6 @@
 import React from "react";
-import './Homepage.css';
-import acnh from '../../Assets/acnh.png'
+import "./Homepage.css";
+import acnh from "../../Assets/acnh.png"
 
 const Homepage = () => {
     return (
@@ -8,10 +8,6 @@ const Homepage = () => {
             <img src={acnh} alt="Animal Crossing New Horizons Logo" id="acnh"/>
             <h1>Welcome to Nookpedia!</h1>
             <h3>Nookpedia is the premier collection of all donatable museum items! Use this resource as a reference to help keep track of your museum progress for Blathers!</h3>
-            <h2>Fish:</h2>
-            <h2>Bugs:</h2>
-            <h2>Fossils:</h2>
-            <h2>Artwork:</h2>
         </div>
     )
 }

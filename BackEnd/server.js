@@ -1,9 +1,9 @@
-import express from 'express';
-import cors from 'cors';
-import dotenv from 'dotenv';
-import mongoose from 'mongoose';
-import userRouter from './routes/Userroutes.js';
-import fishRouter from './routes/FishRoutes.js';
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import mongoose from "mongoose";
+import userRouter from "./routes/Userroutes.js";
+import fishRouter from "./routes/FishRoutes.js";
 
 
 dotenv.config();
@@ -24,8 +24,8 @@ mongoose.connect(ATLAS_URI, {
 });
 
 const connection = mongoose.connection;
-connection.once('open', () => {
-    console.log('Connection established successfully.');
+connection.once("open", () => {
+    console.log("Connection established successfully.");
 });
 
 //Routes

@@ -1,17 +1,17 @@
-.fish-info {
+.sea-info {
     max-width: 800px;
     margin: 0 auto;
     padding: 20 px;
     font-family: Arial, Sans-serif;
 }
 
-.fish-list {
+.sea-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
-.fish-card {
+.sea-card {
     background-color: #53ab44;
     border: 1px solid #1c945c;
     padding: 20px;
@@ -21,27 +21,27 @@
 
 }
 
-.fish-card:hover {
+.sea-card:hover {
     transform: translateY(-5px);
 }
 
-.fish-card h2 {
+.sea-card h2 {
     font-size: 1.5rem;
     margin-bottom:10px;
 }
 
-.fish-card img {
+.sea-card img {
     max-width: 50%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
 }
 
-.fish-card p {
+.sea-card p {
     margin-bottom: 8px;
 }
 
-.fish-card p:first-child {
+.sea-card p:first-child {
     font-weight: bold;
 }
 

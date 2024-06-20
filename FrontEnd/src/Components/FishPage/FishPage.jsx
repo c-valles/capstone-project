@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from 'axios';
+import axios from "axios";
 import "../FishPage/fishpage.css"
 
 const FossilPage = () => {
@@ -10,12 +10,12 @@ const FossilPage = () => {
             try {
                 const response = await axios.get("https://api.nookipedia.com/nh/fish", {
                     headers: {
-                        'X-API-KEY': import.meta.env.VITE_NOOK_API_KEY
+                        "X-API-KEY": import.meta.env.VITE_NOOK_API_KEY
                     }
                 });
                 setData(response.data);
             } catch (error) {
-                console.error('Error fetching fish!', error);
+                console.error("Error fetching fish!", error);
             }
         };
         fetchData();
@@ -24,7 +24,7 @@ const FossilPage = () => {
     return (
         <div className="fish-info">
             <h1>Fish Information:</h1>
-            <div className='fish-list'>
+            <div className="fish-list">
                 {data.map(fish => (
                     <div className="fish-card" key={fish.id}>
                         <h2>{fish.name}</h2>
@@ -33,7 +33,7 @@ const FossilPage = () => {
                         <p>Number: {fish.number}</p>
                         <p>Price: {fish.sell_nook}</p>
                         <p>Location: {fish.location}</p>
-                        <p>Catchphrase: {fish.catchphrase}</p>
+                        <p>Shadow Size: {fish.shadow_size}</p>
                     </div>
                 ))}
             </div>

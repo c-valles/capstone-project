@@ -7,15 +7,23 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 16px;
-    box-shadow: 0 1px 3px -2px black;
+    padding: 12px 32px;
+    background-color: #0e5436;
+    box-shadow: 0 2px 4px rgba(0, 0, 0,0);
 }
 
 .title {
+    display: flex;
     background-image: url(../../Assets/acgrass.png);
-    color: aliceblue;
-    font-size: 38px;
-    font-weight: 600px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    padding: 8px;
+}
+
+p {
+    margin-bottom: 60px;
+    margin-left: 40px;
 }
 
 .navmenu {
@@ -23,7 +31,7 @@
     align-items: center;
     list-style: none;
     gap: 50px;
-    color: aliceblue;
+    color: white;
     font-size: 20px;
     font-weight: 500;
 }
@@ -32,21 +40,39 @@
     cursor: pointer;
 }
 
+.navmenu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.navmenu li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 .account {
     display: flex;
     align-items: center;
-    gap: 45px;
+    gap: 16px;
 }
 
 .account button {
-    width: 157px;
-    height: 58px;
-    outline: none;
-    border: 1px solid #7a7a7a;
-    border-radius: 75px;
-    font-size: 20px;
+    width: 150px;
+    height: 48px;
+    padding: 0;
+    background-color: #53ab44;
+    border: none;
+    border-radius: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
     font-weight: 500;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .account button:active{

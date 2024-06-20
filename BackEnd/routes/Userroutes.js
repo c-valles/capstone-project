@@ -77,7 +77,7 @@ router.put('/:id', async (req, res) => {
             return res.send('username not available!');
         }
         const updatedUser = await Users.findByIdandUpdate(req.params.id, req.body, {newe: true});
-        res.send(updateduser);
+        res.send(updatedUser);
     } catch (error) {
         console.log(error);
         res.send({error: 'Error, invalid data!'});
