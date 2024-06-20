@@ -1,5 +1,7 @@
+//Importing...
 import mongoose from "mongoose";
 
+//Defining Sea Creature Schema
 const SeaSchema = new mongoose.Schema({
     name: string,
     image_url: string,
@@ -10,4 +12,5 @@ const SeaSchema = new mongoose.Schema({
     shadow_movement: string,
 })
 
+//Exporting...
 export default new mongoose.model("Sea", SeaSchema);

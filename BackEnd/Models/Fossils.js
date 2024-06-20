@@ -1,5 +1,7 @@
+//Importing
 import mongoose from "mongoose";
 
+//Defining Fossil Schema
 const FossilSchema = new mongoose.Schema({
     name: String,
     image_url: String,
@@ -9,4 +11,5 @@ const FossilSchema = new mongoose.Schema({
     wished: Boolean,
 })
 
+//Exporting
 export default new mongoose.model("Fossil",FossilSchema);

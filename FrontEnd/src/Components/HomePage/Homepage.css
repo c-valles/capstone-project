@@ -14,6 +14,14 @@ body {
     align-self: center;
 }
 
+#museum {
+    height: 50%;
+    width: 60%;
+    display: flex;
+    align-self: center;
+    margin-bottom: 40px;
+}
+
 .intro {
     
     display: flex;

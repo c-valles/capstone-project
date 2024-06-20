@@ -28,6 +28,11 @@ Youtube:
 -Fetch an API to Display on Page - React Tutorial 22 by Caleb Curry
 -MongoDB and Mongoose | Creating a REST API with Node.js by Academind
 
+W3Schools:
+-CSS Buttons
+-CSS NavBar
+-CSS Cards
+
 
 
 

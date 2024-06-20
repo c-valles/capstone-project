@@ -1,5 +1,7 @@
+//Importing...
 import mongoose from "mongoose";
 
+//Defining Bug Schema
 const BugSchema = new mongoose.Schema({
     name: String,
     number: Number,
@@ -17,4 +19,5 @@ const BugSchema = new mongoose.Schema({
     wished: Boolean
 })
 
+//Exporting...
 export default new mongoose.model("Bug",BugSchema);

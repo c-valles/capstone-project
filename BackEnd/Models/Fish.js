@@ -1,5 +1,7 @@
+//Importing...
 import mongoose from "mongoose";
 
+//Defining Fish Schema
 const FishSchema = new mongoose.Schema({
     name: String,
     number: Number,
@@ -17,4 +19,5 @@ const FishSchema = new mongoose.Schema({
     wished: Boolean,
 });
 
+//Exporting...
 export default new mongoose.model("Fish",FishSchema);

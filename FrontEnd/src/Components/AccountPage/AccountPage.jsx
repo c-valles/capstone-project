@@ -32,14 +32,14 @@ const Account = () => {
                 response = await axios.post("http://localhost:4000/user/signup", { username, email, password });
             }
     
-            // Check if response exists and has data property
+        
             if (response && response.data) {
                 console.log(response.data); // Handle response data as needed
             } else {
-                setError("Empty response from server"); // Handle case where response.data is undefined
+                setError("Empty response from server"); 
             }
         } catch (error) {
-            setError(error.response.data.message); // Display error message from server
+            setError(error.response.data.message);
         }
     };
 

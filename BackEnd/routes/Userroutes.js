@@ -1,3 +1,4 @@
+//Importing...
 import express from "express";
 import Users from "../Models/Users.js";
 
@@ -7,7 +8,6 @@ const router = new express.Router();
  * GET /users/
  * get all users
  */
-
 
 router.get('/', async (req, res) => {
     try {
@@ -22,6 +22,7 @@ router.get('/', async (req, res) => {
  * POST /users/
  * Create a new user
  */
+
 router.post('/', async (req, res) => {
     console.log(req.body);
     try {
@@ -38,6 +39,7 @@ router.post('/', async (req, res) => {
  * GET /user/:id
  * Get user by id
  */
+
 router.get('/:id', async (req, res) => {
     try {
         const user = await Users.findById(req.params.id);
@@ -120,5 +122,5 @@ router.post('/signin', async (req, res) => {
     }
 });
 
-
+//Exporting...
 export default router;
